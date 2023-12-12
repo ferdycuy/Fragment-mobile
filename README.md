@@ -18,7 +18,7 @@ Disini, Saya masih menggunakan project sebelumnya, jadi sekarang Saya hanya ting
 > klik kanan **com.example.tugassembilan**>new>java class
 
 - Lalu kita buat lagi tiga buah class java dan layout xml, dengan menggunakan template Fragment (blank) yang nantinya akan otomatis terbuat code java didalamnya. Caranya seperti ini:
-> klik kanan java class **FragmentActivity**>Fragment>Fragment(Blank)>isi fragment_name</br>
+> klik kanan java class **FragmentActivity**> Fragment> Fragment(Blank)> isi fragment_name
 **NOTE**: Buat sebanyak tiga buah yaitu FirstFragment, SecondFragment, ThirdFragment.
 
 - Buat satu buah layout lagi untuk halaman dari fragment activity ini. Saya menamainya **activity_fragment.xml**
@@ -26,15 +26,15 @@ Disini, Saya masih menggunakan project sebelumnya, jadi sekarang Saya hanya ting
 
 - Kalau sudah, kita tambahkan terlebih dahulu beberapa baris code untuk dependencies di gradle.build.kts. Berikut adalah kodenya :
 
-``
+```
 val fragmentVersion = "1.6.2"
 implementation("androidx.fragment:fragment:$fragmentVersion")
-``
+```
 > **NOTE:** jika sudah menambahkan jangan lupa untuk di sync agar gradle sinkron dengan projectnya.
 
 - Buka **activity_fragment.xml** dan tambahkan code berikut untuk tampilan layoutnya :
 
-`
+```
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -95,12 +95,12 @@ implementation("androidx.fragment:fragment:$fragmentVersion")
         android:layout_height="match_parent"/>
 
 </LinearLayout>
-`
+```
 
 - Jika sudah, lanjut buka ketiga layout tab yang sudah dibuat diawal, kepunyaan saya disini namanya **fragment_first.xml**, **fragment_second.xml**, **fragment_third.xml**. Disini saya menggunakan scroll view agar semua content dapat masuk. Masukan code berikut ke masing - masing layoutnya :
   - **fragment_first.xml**
 
-  ``
+  ```
   <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -147,12 +147,12 @@ implementation("androidx.fragment:fragment:$fragmentVersion")
         </LinearLayout>
     </ScrollView>
 </FrameLayout>
-  ``
+  ```
   
   > **NOTE**: untuk string,drawable silahkan dibuat sesuai keingiinan
 
   - **fragment_second.xml**
-    ``
+    ```
     <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -199,12 +199,12 @@ implementation("androidx.fragment:fragment:$fragmentVersion")
         </LinearLayout>
     </ScrollView>
 </FrameLayout>
-  ``
+  ```
    > **NOTE**: untuk string,drawable silahkan dibuat sesuai keingiinan
    
   - **fragment_third.xml**
 
-  ``
+  ```
   <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -251,13 +251,13 @@ implementation("androidx.fragment:fragment:$fragmentVersion")
         </LinearLayout>
     </ScrollView>
 </FrameLayout>
-  ``
+  ```
   
   > **NOTE**: untuk string,drawable silahkan dibuat sesuai keingiinan
 
 - Setelah semua code layout berhasil dimasukkan, sekarang kita isi code untuk **FragmentActivity.java** agar projectnya bisa berjalan. Berikut adalah codenya:
 
-``
+```
 package com.example.tugassembilan;
 
 import android.os.Bundle;
@@ -318,7 +318,7 @@ public class FragmentActivity extends AppCompatActivity {
         });
     }
 }
-``
+```
 
 Project Fragment nya sudah selesaii,selanjutnyaaaaa....
 
@@ -326,7 +326,7 @@ Project Fragment nya sudah selesaii,selanjutnyaaaaa....
 
 - Pertama - pertama, buka **activity_main.xml** terlebih dahulu untuk membuat icon tombol yang baru. Karena satu baris horizontal maximal tiga buah tombol dan kemarin sudah terisi penuh semua, maka sekarang kita harus membuat baris baru lagi untuk tombol project fragment ini. Berikut adalah codenya :
 
-``
+```
 <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -343,25 +343,25 @@ Project Fragment nya sudah selesaii,selanjutnyaaaaa....
             android:src="@drawable/icon_fragment"
             tools:ignore="UsingOnClickInXml, SpeakableTextPresentCheck" />
     </LinearLayout>
-``
+```
 > **NOTE** : tambahkan baris code ini dibawah linearlayout kedua.
 
 - kedua, buka **MainActivity.java** dan tambahkan code intent untuk project fragmentnya. Berikut adalah codenya:
 
-``
+```
 public void btnFragmentActivity(View view) {
     Intent fragact = new Intent(MainActivity.this, FragmentActivity.class);
     startActivity(fragact);
 }
-``
+```
 
 - Ketiga, buka AndroidManifest.xml dan tambahkan code berikut:
 
-``
+```
 <activity
         android:name=".FragmentActivity"
         android:exported="true" />
-``
+```
 
 SUDAH SELESAIII,LANJUTT?...HASIL RUNNYA KAWAN HEHE
 
