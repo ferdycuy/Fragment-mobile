@@ -15,5 +15,5 @@ https://private-user-images.githubusercontent.com/151630441/288971603-2c9ec793-1
 ### Lngkah - langkah pengerjaan 
 Disini, Saya masih menggunakan project sebelumnya, jadi sekarang Saya hanya tinggal menambahkan lagi satu tombol intent untuk menuju activity fragment nya.
 - Pertama, kita buat sebuah class java baru, disini saya menamai classnya FragmentActivity.
-< hhh
+
 > hh
