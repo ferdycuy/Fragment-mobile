@@ -147,13 +147,14 @@ implementation("androidx.fragment:fragment:$fragmentVersion")
                 android:textSize="18sp" />
         </LinearLayout>
     </ScrollView>
-</FrameLayout>
-  ```
+    </FrameLayout>
+    ```
   
   > **NOTE**: untuk string,drawable silahkan dibuat sesuai keingiinan
 
   - **fragment_second.xml**
-    ```
+    
+  ```
     <?xml version="1.0" encoding="utf-8"?>
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -199,9 +200,10 @@ implementation("androidx.fragment:fragment:$fragmentVersion")
                 android:textSize="18sp" />
         </LinearLayout>
     </ScrollView>
-</FrameLayout>
+    </FrameLayout>
   ```
-   > **NOTE**: untuk string,drawable silahkan dibuat sesuai keingiinan
+  
+  > **NOTE**: untuk string,drawable silahkan dibuat sesuai keingiinan
    
   - **fragment_third.xml**
 
@@ -251,10 +253,10 @@ implementation("androidx.fragment:fragment:$fragmentVersion")
                 android:textSize="18sp" />
         </LinearLayout>
     </ScrollView>
-  </FrameLayout>
-  ```
+    </FrameLayout>
+   ```
   
-  > **NOTE**: untuk string,drawable silahkan dibuat sesuai keingiinan
+   > **NOTE**: untuk string,drawable silahkan dibuat sesuai keingiinan
 
 - Setelah semua code layout berhasil dimasukkan, sekarang kita isi code untuk **FragmentActivity.java** agar projectnya bisa berjalan. Berikut adalah codenya:
 
