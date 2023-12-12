@@ -95,6 +95,7 @@ implementation("androidx.fragment:fragment:$fragmentVersion")
         android:layout_height="match_parent"/>
 
 </LinearLayout>
+
 ```
 
 - Jika sudah, lanjut buka ketiga layout tab yang sudah dibuat diawal, kepunyaan saya disini namanya **fragment_first.xml**, **fragment_second.xml**, **fragment_third.xml**. Disini saya menggunakan scroll view agar semua content dapat masuk. Masukan code berikut ke masing - masing layoutnya :
@@ -102,7 +103,7 @@ implementation("androidx.fragment:fragment:$fragmentVersion")
 
   ```
   <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -154,7 +155,7 @@ implementation("androidx.fragment:fragment:$fragmentVersion")
   - **fragment_second.xml**
     ```
     <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -206,7 +207,7 @@ implementation("androidx.fragment:fragment:$fragmentVersion")
 
   ```
   <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -250,7 +251,7 @@ implementation("androidx.fragment:fragment:$fragmentVersion")
                 android:textSize="18sp" />
         </LinearLayout>
     </ScrollView>
-</FrameLayout>
+  </FrameLayout>
   ```
   
   > **NOTE**: untuk string,drawable silahkan dibuat sesuai keingiinan
